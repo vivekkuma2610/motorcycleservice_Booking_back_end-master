@@ -17,7 +17,7 @@ app.use(morgan('dev'));
 
 // Database connection
 mongoose
-  .connect(config.MONGO_URI, {
+  .connect(config.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
